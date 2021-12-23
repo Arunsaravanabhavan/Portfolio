@@ -16,14 +16,14 @@ html{
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: black;
 }
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: crimson;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: crimson;
 }
 
 /* all similar content styling codes */
@@ -98,7 +98,7 @@ section .title::after{
 .navbar .logo a{
     color: #fff;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 650;
 }
 .navbar .logo a span{
     color: crimson;
@@ -163,6 +163,7 @@ section .title::after{
 
 
 /* home section styling */
+
 .home{
     display: flex;
     background: url("images/ff.jpg") no-repeat center;
@@ -210,7 +211,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: crimson;
+    color: white;
     background: none;
 }
 
@@ -342,6 +343,8 @@ section .title::after{
 .skills .skills-content .left a:hover{
     color: crimson;
     background: none;
+   
+    
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -570,10 +573,18 @@ footer span a:hover{
 
 
 /* responsive media query start */
+
+@media (max-width: 1000px) {
+    .home {
+        background: url("images/banner.jpg");
+    }
+}
+
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
+        
     }
 }
 
@@ -665,7 +676,7 @@ footer span a:hover{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .home .home-content .text-2{
         font-size: 50px;
     }
